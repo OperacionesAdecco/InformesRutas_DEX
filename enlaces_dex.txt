@@ -2,7 +2,6 @@ DEX	LINK
 ATIPANA DEX S.A.C.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/atipana-dex-s-a-c.html
 ATUQ DEX S.A.C.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/atuq-dex-s-a-c.html
 D.L.F. MEDINA RIVERA S.A.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/d-l-f-medina-rivera-s-a.html
-DISTRIBUIDORA ATIX S.A.C.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/distribuidora-atix-s-a-c.html
 DISTRIBUIDORA AURELIO S.A.C.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/distribuidora-aurelio-s-a-c.html
 DISTRIBUIDORA CUNZA S.A.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/distribuidora-cunza-s-a.html
 DISTRIBUIDORA SOL DEL VALLE S.A.C.	https://OperacionesAdecco.github.io/InformesRutas_DEX/dex/distribuidora-sol-del-valle-s-a-c.html
