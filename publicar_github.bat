@@ -2,9 +2,9 @@
 chcp 65001 > nul
 title PUBLICANDO INFORME SEMANAL DEX EN GITHUB
 
-echo ================================================================
-echo PUBLICANDO INFORME SEMANAL DEX EN GITHUB
-echo ================================================================
+ echo ================================================================
+ echo PUBLICANDO INFORME SEMANAL DEX EN GITHUB
+ echo ================================================================
 
 cd /d "%~dp0"
 
@@ -29,25 +29,24 @@ if not exist ".git" (
 echo.
 echo Sincronizando primero con GitHub...
 git fetch origin main
+if errorlevel 1 (
+    echo.
+    echo ERROR: No se pudo conectar con el repositorio remoto.
+    pause
+    exit /b 1
+)
 
 git pull origin main --rebase --autostash
 if errorlevel 1 (
     echo.
     echo ERROR: No se pudo sincronizar con GitHub.
-    echo Ejecuta: git rebase --abort
+    echo Si existe un rebase pendiente, ejecuta: git rebase --abort
     pause
     exit /b 1
 )
 
 echo.
 echo Preparando archivos...
-
-if not exist ".gitignore" (
-    echo ~$*.xlsx>.gitignore
-    echo __pycache__/>>.gitignore
-    echo *.pyc>>.gitignore
-)
-
 git add -A
 
 git diff --cached --quiet
@@ -66,7 +65,6 @@ if errorlevel 1 (
 echo.
 echo Subiendo archivos a GitHub...
 git push -u origin main
-
 if errorlevel 1 (
     echo.
     echo ERROR: No se pudo subir la informacion a GitHub.
