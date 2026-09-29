@@ -21,9 +21,9 @@ if not exist ".git" (
     echo Inicializando repositorio local...
     git init
     git branch -M main
-    git remote add origin https://github.com/OperacionesAdecco/Consolidado_InformesDEX.git
+    git remote add origin https://github.com/OperacionesAdecco/InformesRutas_DEX.git
 ) else (
-    git remote set-url origin https://github.com/OperacionesAdecco/Consolidado_InformesDEX.git
+    git remote set-url origin https://github.com/OperacionesAdecco/InformesRutas_DEX.git
 )
 
 echo.
@@ -78,6 +78,6 @@ echo PUBLICACION COMPLETADA CORRECTAMENTE
 echo ================================================================
 echo.
 echo Pagina principal:
-echo https://OperacionesAdecco.github.io/Consolidado_InformesDEX/
+echo https://OperacionesAdecco.github.io/InformesRutas_DEX/
 echo.
 pause
